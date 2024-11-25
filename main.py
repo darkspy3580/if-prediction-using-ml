@@ -26,7 +26,7 @@ try:
       background-color: #1E1E1E; 
       background-image: url("data:image/png;base64,{image_base64}"); 
       background-position: right;  /* Adjusts the position */
-      background-size: 82%;  /* Zooms out the image */
+      background-size: 80%;  /* Zooms out the image */
       background-repeat: no-repeat;
       padding: 3rem;
       border-radius: 10px;
