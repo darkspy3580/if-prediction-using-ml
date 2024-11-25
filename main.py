@@ -18,7 +18,7 @@ try:
     .stApp {{
       background-color: #1E1E1E; 
       background-image: url("data:image/png;base64,{image_base64}");
-      background-position: center;  /* Adjusts the position */
+      background-position: left;  /* Adjusts the position */
       background-size: 100%;  /* Zooms out the image */
       background-repeat: no-repeat;
       padding: 3rem;
