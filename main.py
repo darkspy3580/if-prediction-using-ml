@@ -12,7 +12,7 @@ image_path = 'assets/home_bg.png'  # Replace with the path to your image
 
 # Function to embed title and favicon in the head section
 def embed_title_and_favicon():
-    title = "Your Custom Title"  # Set your custom title here
+    title = "IF PREDICTON"  # Set your custom title here
     favicon_path = 'assets/favicon.ico'  # Path to your favicon file
     try:
         # Convert favicon to base64
