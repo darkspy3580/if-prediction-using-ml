@@ -1,6 +1,7 @@
 streamlit
-joblib
 numpy
+pandas
 scikit-learn
-rdkit
 pubchempy
+rdkit
+stmol
