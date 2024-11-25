@@ -18,10 +18,13 @@ def embed_title_and_favicon():
 
         # Embed the title and favicon using HTML
         page_meta = f"""
-        <head>
-            <title>{title}</title>
-            <link rel="icon" href="data:image/png;base64,{favicon_base64}" type="image/png">
-        </head>
+        <style>
+            /* Inject favicon and title */
+            <head>
+                <title>{title}</title>
+                <link rel="icon" href="data:image/png;base64,{favicon_base64}" type="image/png">
+            </head>
+        </style>
         """
         st.markdown(page_meta, unsafe_allow_html=True)
     except FileNotFoundError:
@@ -41,7 +44,7 @@ try:
     <style>
     .stApp {{
       background-color: #1E1E1E; 
-      background-image: url("data:image/png;base64,{image_base64}");
+      background-image: url("data:image/png;base64,{image_base64}"); 
       background-position: right;  /* Adjusts the position */
       background-size: 85%;  /* Zooms out the image */
       background-repeat: no-repeat;
