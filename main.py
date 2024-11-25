@@ -3,7 +3,7 @@ import base64
 
 # Set the custom page title and favicon (This must be at the very top)
 st.set_page_config(
-    page_title="IF Prediction",  # Custom title without "Streamlit"
+    page_title="🔬 IF Prediction",  # Custom title without "Streamlit"
     page_icon="assets/Logov.png",  # Path to the favicon image
 )
 
