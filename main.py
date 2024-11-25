@@ -54,7 +54,4 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add sample content to test the layout
-st.title("Welcome to My Custom Background App")
-st.subheader("This is a subheader with custom styling.")
-st.write("Your background image should now be visible.")
+
