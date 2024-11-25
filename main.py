@@ -18,7 +18,7 @@ try:
     .stApp {{
         background-color: #1E1E1E; 
         background-image: url("data:image/png;base64,{image_base64}");
-        background-position: center;
+        background-position: left;
         color: #FFFFFF;  /* White text color */
         padding: 3rem;
         border-radius: 15px;
