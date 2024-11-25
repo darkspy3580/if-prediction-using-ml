@@ -18,11 +18,23 @@ try:
     .stApp {{
       background-color: #1E1E1E; 
       background-image: url("data:image/png;base64,{image_base64}");
-      background-position: left;  /* Adjusts the position */
-      background-size: 100%;  /* Zooms out the image */
+      background-position: center top;  /* Adjusts the position */
+      background-size: 200%;  /* Zooms out the image */
       background-repeat: no-repeat;
-      padding: 2rem;
-      border-radius: 5px; 
+      padding: 3rem;
+      border-radius: 10px;
+      text-align: center;  
+      padding-left: 80px;  /* Add space for sidebar */
+    }}
+
+    /* Adjust the sidebar width (optional) */
+    .css-1g1z59i {{
+      width: 200px;  /* Increase the width of the sidebar */
+    }}
+
+    /* Adjust the main content area */
+    .css-1y4v5i9 {{
+      margin-left: 220px;  /* Shift main content to the right */
     }}
     </style>
     """
