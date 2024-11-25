@@ -16,7 +16,12 @@ try:
     page_bg_img = f"""
     <style>
     .stApp {{
-      
+      background-color: #1E1E1E; 
+        background-image: url("data:image/png;base64,{image_base64}");
+        background-position: left;
+        padding: 3rem;
+        border-radius: 10px;
+        text-align: center;  
     }}
     </style>
     """
