@@ -3,7 +3,7 @@ import base64
 
 # Set the custom page title and favicon (This must be at the top)
 st.set_page_config(
-    page_title="IF - Prediction App",  # Title of the page
+    page_title="IF Prediction",  # Custom title without "Streamlit"
     page_icon="assets/Logov.png",  # Path to the favicon image
 )
 
@@ -48,4 +48,3 @@ try:
     st.markdown(page_bg_img, unsafe_allow_html=True)
 except FileNotFoundError:
     st.error(f"Image not found: {image_path}")
-
