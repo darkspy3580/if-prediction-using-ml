@@ -18,13 +18,17 @@ st.set_page_config(page_title="Custom Background App", layout="wide")
 # Define the path to the background image
 image_path = "assets/home_bg.png"  # Replace with your local PNG image path
 
+# Ensure the file path works both locally and on Streamlit Cloud
+current_dir = os.path.dirname(os.path.abspath(__file__))
+absolute_image_path = os.path.join(current_dir, image_path)
+
 # Check if the file exists and convert to base64
-if os.path.exists(image_path):
-    image_base64 = image_to_base64(image_path)
+if os.path.exists(absolute_image_path):
+    image_base64 = image_to_base64(absolute_image_path)
     if image_base64:
-        st.success(f"Image successfully loaded from: {image_path}")
+        st.success(f"Image successfully loaded from: {absolute_image_path}")
 else:
-    st.error(f"Image not found at: {image_path}")
+    st.error(f"Image not found at: {absolute_image_path}")
     st.stop()  # Stop the app if the image isn't found
 
 # Add custom background and text styling using CSS
@@ -54,4 +58,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
+# Add sample content to test the layout
+st.title("Welcome to My Custom Background App")
+st.subheader("This is a subheader with custom styling.")
+st.write("Your background image should now be visible.")
