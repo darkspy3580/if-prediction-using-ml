@@ -19,9 +19,8 @@ try:
         background-color: #1E1E1E; 
         background-image: url("data:image/png;base64,{image_base64}");
         background-position: left;
-        color: #FFFFFF;  /* White text color */
         padding: 3rem;
-        border-radius: 15px;
+        border-radius: 10px;
         text-align: center;
     }}
     </style>
@@ -30,6 +29,4 @@ try:
 except FileNotFoundError:
     st.error(f"Image not found: {image_path}")
 
-# Add other Streamlit components
-st.title("Welcome to My App")
-st.write("This app has a custom background image.")
+
