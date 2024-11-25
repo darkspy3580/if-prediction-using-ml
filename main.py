@@ -17,16 +17,16 @@ try:
     <style>
     .stApp {{
       background-color: #1E1E1E; 
-        background-image: url("data:image/png;base64,{image_base64}");
-        background-position: right;
-        padding: 3rem;
-        border-radius: 10px;
-        text-align: center;  
+      background-image: url("data:image/png;base64,{image_base64}");
+      background-position: center;  /* Adjusts the position */
+      background-size: 200%;  /* Zooms out the image */
+      background-repeat: no-repeat;
+      padding: 3rem;
+      border-radius: 10px;
+      text-align: center;  
     }}
     </style>
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 except FileNotFoundError:
     st.error(f"Image not found: {image_path}")
-
-
