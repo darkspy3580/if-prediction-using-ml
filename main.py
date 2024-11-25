@@ -9,7 +9,7 @@ def image_to_base64(image_path):
 
 # Function to embed title and favicon in the head section
 def embed_title_and_favicon():
-    title = "IF"  # Set your custom title here
+    title = "IF - Prediction App"  # Set your custom title here
     favicon_path = 'assets/Logov.png'  # Path to your favicon file
     try:
         # Convert favicon to base64
@@ -26,6 +26,7 @@ def embed_title_and_favicon():
             </head>
         </style>
         """
+        # Inject this meta into the HTML of the Streamlit page
         st.markdown(page_meta, unsafe_allow_html=True)
     except FileNotFoundError:
         st.error(f"Favicon not found: {favicon_path}")
