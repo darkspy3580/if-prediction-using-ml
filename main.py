@@ -9,34 +9,10 @@ def image_to_base64(image_path):
 
 # Load the local image and convert it to base64
 image_path = 'assets/home_bg.png'  # Replace with the path to your image
-
-# Function to embed title and favicon in the head section
-def embed_title_and_favicon():
-    title = "IF PREDICTON"  # Set your custom title here
-    favicon_path = 'assets/favicon.ico'  # Path to your favicon file
-    try:
-        # Convert favicon to base64
-        with open(favicon_path, "rb") as favicon_file:
-            favicon_base64 = base64.b64encode(favicon_file.read()).decode('utf-8')
-
-        # Embed the title and favicon using HTML
-        page_meta = f"""
-        <head>
-            <title>{title}</title>
-            <link rel="icon" href="data:image/x-icon;base64,{favicon_base64}" type="image/x-icon">
-        </head>
-        """
-        st.markdown(page_meta, unsafe_allow_html=True)
-    except FileNotFoundError:
-        st.error(f"Favicon not found: {favicon_path}")
-
-# Add favicon and title to the page
-embed_title_and_favicon()
-
 try:
     image_base64 = image_to_base64(image_path)
 
-    # Embed the background image and custom styles
+    # Embed the image in CSS
     page_bg_img = f"""
     <style>
     .stApp {{
