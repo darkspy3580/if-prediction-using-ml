@@ -22,7 +22,7 @@ try:
       background-size: 100%;  /* Zooms out the image */
       background-repeat: no-repeat;
       padding: 3rem;
-      border-radius: 10px;
+      border-radius: 5px;
       text-align: center;  
     }}
     </style>
