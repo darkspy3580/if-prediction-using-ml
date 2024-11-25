@@ -1,9 +1,9 @@
 import streamlit as st
 import base64
 
-# Set the custom page title and favicon (This must be at the top)
+# Set the custom page title and favicon (This must be at the very top)
 st.set_page_config(
-    page_title="IF Prediction",  # Custom title without "Streamlit"
+    page_title="IF Prediction App",  # Custom title without "Streamlit"
     page_icon="assets/Logov.png",  # Path to the favicon image
 )
 
@@ -26,7 +26,7 @@ try:
       background-color: #1E1E1E; 
       background-image: url("data:image/png;base64,{image_base64}"); 
       background-position: right;  /* Adjusts the position */
-      background-size: 82%;  /* Zooms out the image */
+      background-size: 85%;  /* Zooms out the image */
       background-repeat: no-repeat;
       padding: 3rem;
       border-radius: 10px;
