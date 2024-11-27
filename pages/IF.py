@@ -139,6 +139,6 @@ if submit_button and compound_name:
             st.write("### Compound Details")
             st.table(compound_data)
     else:
-        st.write("⚠️ Compound not found in the dataset CHOOSE [ ML IF ] to predict using ML")
+        st.write("⚠️ Compound not found in the dataset  CHOOSE  [ ML IF ] to predict using ML")
         
 
