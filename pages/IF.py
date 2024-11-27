@@ -141,5 +141,4 @@ if submit_button and compound_name:
     else:
         st.write("⚠️ Compound not found in the dataset.")
         
-# Footer Section
-st.markdown('<div class="footer">Powered by Streamlit, RDKit, and ML 🚀</div>', unsafe_allow_html=True)
+
