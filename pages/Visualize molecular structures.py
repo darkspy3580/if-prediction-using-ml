@@ -128,7 +128,7 @@ with st.form(key='compound_form'):
 # Button to fetch the SMILES
 if submit_button:
     if compound_name:
-        with st.spinner('Fetching SMILES from PubChem...'):
+        with st.spinner('Fetching SMILES ...'):
             smiles, num_compounds, compound = fetch_smiles_from_pubchem(compound_name)
             
             if smiles:
@@ -180,5 +180,5 @@ with st.container():
         else:
             st.warning("Please enter a valid SMILES string before clicking the button.")
 # Footer
-st.markdown('<div class="footer"> Streamlit, RDKit, and Py3DMOL 🚀</div>', unsafe_allow_html=True)
+
 
