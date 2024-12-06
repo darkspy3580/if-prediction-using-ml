@@ -74,7 +74,7 @@ with st.form(key='compound_form'):
 # Button to fetch the SMILES
 if submit_button:
     if compound_name:
-        with st.spinner('Fetching SMILES from PubChem...'):
+        with st.spinner('Fetching SMILES ...'):
             smiles, num_compounds, compound = fetch_smiles_from_pubchem(compound_name)
             
             if smiles:
@@ -194,7 +194,7 @@ st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
 # App title and description
 st.markdown('<h2>Predict IF Value from SMILES and Concentrations Using ML</h2>', unsafe_allow_html=True)
-st.write("🔬 Provide the SMILES strings and their concentrations to predict the Imprinting Factor (IF).")
+st.write("🔬 Provide the SMILES  and their concentrations to predict the Imprinting Factor (IF).")
 
 # Input section
 st.markdown('<div class="section-title">Input Details</div>', unsafe_allow_html=True)
