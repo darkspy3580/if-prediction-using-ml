@@ -1,4 +1,4 @@
-TEMPLATE,M.wt,Conc(mmol),FUNCTIONAL MONOMER,M.wt,Conc(mmol),crosslinker,M.wt,CONC(mmol),Solubility,Xlogp,H bond acceptor count,H bond donor count,IF,MIP,template smile,crosslinker smile,momomer smile
+Compound name,M.wt,Conc(mmol),FUNCTIONAL MONOMER,M.wt,Conc(mmol),crosslinker,M.wt,CONC(mmol),Solubility,Xlogp,H bond acceptor count,H bond donor count,IF,MIP,template smile,crosslinker smile,momomer smile
 p-1-Octylphenol,206.32,2,4-VP,86.11,7,EDMA,207.27,25,0.85,5.3,1,1,1.42,10.4,CC(C)(C)CC(C)(C)C1=CC=C(C=C1)O.C=O.C1=CC=C(C=C1)O,CC(CC1=CC2=C(C=C1)OCCO2)NC,C=CC1=CC=C(C=C1)O
 p-t-Butylphenol,150.22,2,4-VP,86.11,7,EDMA,207.27,25,0.58,3.3,1,1,1.43,4.52,CC(C)(C)C1=CC=C(C=C1)O,CC(CC1=CC2=C(C=C1)OCCO2)NC,C=CC1=CC=C(C=C1)O
 (S)-Nilvadipine,385.4,2,MAA,72.09,7,EDMA,207.27,25,0.1,2.9,8,1,1.55,10.1,CC1=C(C(C(=C(N1)C#N)C(=O)OC)C2=CC(=CC=C2)[N+](=O)[O-])C(=O)OC(C)C,CC(CC1=CC2=C(C=C1)OCCO2)NC,CN.C1=CC(=O)OC1=O
