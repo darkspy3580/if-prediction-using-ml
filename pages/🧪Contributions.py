@@ -5,7 +5,7 @@ import streamlit as st
 st.markdown('<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">', unsafe_allow_html=True)
 
 # Title of the page
-st.title("Contributions")
+st.title("Contributors ")
 
 # Contributions and contact details
 st.markdown("""
